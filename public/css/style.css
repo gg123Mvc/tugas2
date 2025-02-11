@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Buttons */
+button, .btn, .back-btn {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover, .back-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.05);
+}
+
+/* Back Button Specific Styling */
+.back-btn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: auto;
+    transition: transform 0.3s;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+/* Image Preview Animation */
+img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+/* Animasi Halaman */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container, form, table {
+    animation: fadeIn 0.6s ease-in-out;
+}
